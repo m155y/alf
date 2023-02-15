@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>linkedicon</string>
+	<key>category</key>
+	<string>Automattic Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>0FF16BDE-3B7B-45E3-882B-1A22D5C21E4B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FA3B224F-0028-47CB-8228-7D31E804E923</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>169CB371-3022-4CD2-BFCD-DB3C71514132</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>04F17F66-C7C2-42E7-A2FA-E4F8D6BEB2C0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2EF9C75D-986D-4A30-BE46-2711A90E988E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AA7768EB-0D48-4786-8C9E-13DEF912053E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>355B0B98-66AC-4A5D-A8D4-615AA4DF9AA5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8D8B86C7-1C01-4C41-98F8-6A3404F3B570</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>78830AA0-B7EC-451A-BB63-F6EE2706B5DF</key>
+		<array/>
+		<key>8D8B86C7-1C01-4C41-98F8-6A3404F3B570</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4F27BFC9-8100-4B29-A6FF-C77F7CDBBA94</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>AA7768EB-0D48-4786-8C9E-13DEF912053E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>78830AA0-B7EC-451A-BB63-F6EE2706B5DF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FA3B224F-0028-47CB-8228-7D31E804E923</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2EF9C75D-986D-4A30-BE46-2711A90E988E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>78830AA0-B7EC-451A-BB63-F6EE2706B5DF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Missy Stevanovic</string>
+	<key>description</key>
+	<string>Create Rich Text Links</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Linked Emoji Generator</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/bash
+url="{query}"
+
+if [[ "$url" == *"slack"* ]]; then
+  echo ":slack:"
+elif
+	[[ "$url" == *"github"* ]]; then
+  echo ":github:"
+elif
+	[[ "$url" == *"wordpress"* ]]; then
+  echo ":p:"
+elif
+	[[ "$url" == *"frontapp"* ]]; then
+  echo ":frontapp2:"
+else
+	echo ":link:"
+
+fi</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2EF9C75D-986D-4A30-BE46-2711A90E988E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>use AppleScript version "2.4" -- Yosemite (10.10) or lateruse framework "Foundation"use framework "AppKit"use scripting additions
+
+-- classes, constants, and enums used
+property NSRTFTextDocumentType : a reference to current application's NSRTFTextDocumentType
+property NSPasteboardTypeRTF : a reference to current application's NSPasteboardTypeRTF
+property NSPasteboardTypeString : a reference to current application's NSPasteboardTypeString
+property NSLinkAttributeName : a reference to current application's NSLinkAttributeName
+property NSSingleUnderlineStyle : a reference to 1
+property NSColor : a reference to current application's NSColor
+property NSUnderlineStyleAttributeName : a reference to current application's NSUnderlineStyleAttributeName
+property NSForegroundColorAttributeName : a reference to current application's NSForegroundColorAttributeName
+property NSDictionary : a reference to current application's NSDictionary
+property NSMutableAttributedString : a reference to current application's NSMutableAttributedString
+property |NSURL| : a reference to current application's |NSURL|
+
+set linkTextStr to (system attribute "urltype")
+set urlStr to (system attribute "url")
+set mdLinkStr to "[" &amp; linkTextStr &amp; "](" &amp; urlStr &amp; ")"
+set linkURL to |NSURL|'s URLWithString:urlStr
+-- define attributes to apply
+set theAtts to NSDictionary's dictionaryWithObjects:{linkURL, NSColor's blueColor(), NSSingleUnderlineStyle} forKeys:{NSLinkAttributeName, NSForegroundColorAttributeName, NSUnderlineStyleAttributeName}
+-- make attributed string
+set attString to NSMutableAttributedString's alloc()'s initWithString:linkTextStr attributes:theAtts
+-- need it in RTF data form for clipboard
+set rtfData to attString's RTFFromRange:{0, attString's |length|()} documentAttributes:{DocumentType:NSRTFTextDocumentType}
+set pb to current application's NSPasteboard's generalPasteboard() -- get pasteboard
+pb's clearContents()
+-- set both types for the first object on the clipboard
+pb's setData:rtfData forType:NSPasteboardTypeRTF
+pb's setString:mdLinkStr forType:NSPasteboardTypeString</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>78830AA0-B7EC-451A-BB63-F6EE2706B5DF</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>url</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Enter URL</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>0FF16BDE-3B7B-45E3-882B-1A22D5C21E4B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>v</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1048576</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>355B0B98-66AC-4A5D-A8D4-615AA4DF9AA5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>⌫</string>
+				<key>keycode</key>
+				<integer>51</integer>
+				<key>keymod</key>
+				<integer>0</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>4F27BFC9-8100-4B29-A6FF-C77F7CDBBA94</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>urltype</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>AA7768EB-0D48-4786-8C9E-13DEF912053E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>url</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>FA3B224F-0028-47CB-8228-7D31E804E923</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>seconds</key>
+				<string>0.1</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.delay</string>
+			<key>uid</key>
+			<string>8D8B86C7-1C01-4C41-98F8-6A3404F3B570</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>use AppleScript version "2.4" -- Yosemite (10.10) or lateruse framework "Foundation"use framework "AppKit"use scripting additions
+
+-- classes, constants, and enums used
+property NSRTFTextDocumentType : a reference to current application's NSRTFTextDocumentType
+property NSPasteboardTypeRTF : a reference to current application's NSPasteboardTypeRTF
+property NSPasteboardTypeString : a reference to current application's NSPasteboardTypeString
+property NSLinkAttributeName : a reference to current application's NSLinkAttributeName
+property NSSingleUnderlineStyle : a reference to 1
+property NSColor : a reference to current application's NSColor
+property NSUnderlineStyleAttributeName : a reference to current application's NSUnderlineStyleAttributeName
+property NSForegroundColorAttributeName : a reference to current application's NSForegroundColorAttributeName
+property NSDictionary : a reference to current application's NSDictionary
+property NSMutableAttributedString : a reference to current application's NSMutableAttributedString
+property |NSURL| : a reference to current application's |NSURL|
+
+set linkTextStr to (system attribute "urltype")
+set urlStr to (system attribute "url")
+set mdLinkStr to "[" &amp; linkTextStr &amp; "](" &amp; urlStr &amp; ")"
+set linkURL to |NSURL|'s URLWithString:urlStr
+-- define attributes to apply
+set theAtts to NSDictionary's dictionaryWithObjects:{linkURL, NSColor's blueColor(), NSSingleUnderlineStyle} forKeys:{NSLinkAttributeName, NSForegroundColorAttributeName, NSUnderlineStyleAttributeName}
+-- make attributed string
+set attString to NSMutableAttributedString's alloc()'s initWithString:linkTextStr attributes:theAtts
+-- need it in RTF data form for clipboard
+set rtfData to attString's RTFFromRange:{0, attString's |length|()} documentAttributes:{DocumentType:NSRTFTextDocumentType}
+set pb to current application's NSPasteboard's generalPasteboard() -- get pasteboard
+pb's clearContents()
+-- set both types for the first object on the clipboard
+pb's setData:rtfData forType:NSPasteboardTypeRTF
+pb's setString:mdLinkStr forType:NSPasteboardTypeString</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>04F17F66-C7C2-42E7-A2FA-E4F8D6BEB2C0</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>2</integer>
+				<key>acceptstext</key>
+				<false/>
+				<key>acceptsurls</key>
+				<true/>
+				<key>name</key>
+				<string>Rich Text URL</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>169CB371-3022-4CD2-BFCD-DB3C71514132</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Missy created this workflow because she is lazy.</string>
+	<key>uidata</key>
+	<dict>
+		<key>04F17F66-C7C2-42E7-A2FA-E4F8D6BEB2C0</key>
+		<dict>
+			<key>xpos</key>
+			<real>395</real>
+			<key>ypos</key>
+			<real>620</real>
+		</dict>
+		<key>0FF16BDE-3B7B-45E3-882B-1A22D5C21E4B</key>
+		<dict>
+			<key>xpos</key>
+			<real>60</real>
+			<key>ypos</key>
+			<real>275</real>
+		</dict>
+		<key>169CB371-3022-4CD2-BFCD-DB3C71514132</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Universal Action</string>
+			<key>xpos</key>
+			<real>155</real>
+			<key>ypos</key>
+			<real>620</real>
+		</dict>
+		<key>2EF9C75D-986D-4A30-BE46-2711A90E988E</key>
+		<dict>
+			<key>xpos</key>
+			<real>325</real>
+			<key>ypos</key>
+			<real>160</real>
+		</dict>
+		<key>355B0B98-66AC-4A5D-A8D4-615AA4DF9AA5</key>
+		<dict>
+			<key>xpos</key>
+			<real>735</real>
+			<key>ypos</key>
+			<real>295</real>
+		</dict>
+		<key>4F27BFC9-8100-4B29-A6FF-C77F7CDBBA94</key>
+		<dict>
+			<key>xpos</key>
+			<real>1025</real>
+			<key>ypos</key>
+			<real>295</real>
+		</dict>
+		<key>78830AA0-B7EC-451A-BB63-F6EE2706B5DF</key>
+		<dict>
+			<key>xpos</key>
+			<real>565</real>
+			<key>ypos</key>
+			<real>275</real>
+		</dict>
+		<key>8D8B86C7-1C01-4C41-98F8-6A3404F3B570</key>
+		<dict>
+			<key>xpos</key>
+			<real>920</real>
+			<key>ypos</key>
+			<real>325</real>
+		</dict>
+		<key>AA7768EB-0D48-4786-8C9E-13DEF912053E</key>
+		<dict>
+			<key>xpos</key>
+			<real>495</real>
+			<key>ypos</key>
+			<real>305</real>
+		</dict>
+		<key>FA3B224F-0028-47CB-8228-7D31E804E923</key>
+		<dict>
+			<key>xpos</key>
+			<real>240</real>
+			<key>ypos</key>
+			<real>305</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>variables</key>
+	<dict>
+		<key>url</key>
+		<string>{var:url}</string>
+		<key>urltype</key>
+		<string>{var:urltype}</string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>url</string>
+		<string>urltype</string>
+	</array>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/m155y/alf</string>
+</dict>
+</plist>
